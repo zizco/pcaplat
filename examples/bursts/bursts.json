@@ -1,0 +1,78 @@
+{
+  "json_encoding": "non-finite numbers are written as null, with a sibling field '<name>_nonfinite' set to '+inf', '-inf' or 'nan'. In percentile rows, '+inf' is a lost or late packet ranked as infinitely late, and an unbounded interval end also has its ci_low_unbounded / ci_high_unbounded flag; 'nan' is a statistic of an empty sample.",
+  "file": {
+    "file": "a.pcap",
+    "sha256_12": "de09a2adedfc",
+    "format": "pcap",
+    "timestamp_resolution": "1 ns",
+    "packets": 1000000,
+    "duration_ns": 1620528686
+  },
+  "meta": {
+    "line_rate": "25G",
+    "threshold": 0.9,
+    "issues": []
+  },
+  "windows": [
+    {
+      "window_ns": 10000,
+      "window": "10 us",
+      "peak_bits": 249984,
+      "peak_utilization": 0.999936,
+      "peak_start_ns": 1760000000083650506,
+      "episodes_above_threshold": 19,
+      "applicable": true,
+      "allowance": 0.0002,
+      "beyond_line_rate": false,
+      "average_utilization": 0.024880768446210285
+    },
+    {
+      "window_ns": 100000,
+      "window": "100 us",
+      "peak_bits": 1550304,
+      "peak_utilization": 0.6201216,
+      "peak_start_ns": 1760000001377240621,
+      "episodes_above_threshold": 0,
+      "applicable": true,
+      "allowance": 2e-05,
+      "beyond_line_rate": false,
+      "average_utilization": 0.024880768446210285
+    },
+    {
+      "window_ns": 1000000,
+      "window": "1 ms",
+      "peak_bits": 2137968,
+      "peak_utilization": 0.08551872,
+      "peak_start_ns": 1760000001458072816,
+      "episodes_above_threshold": 0,
+      "applicable": true,
+      "allowance": 2e-06,
+      "beyond_line_rate": false,
+      "average_utilization": 0.024880768446210285
+    },
+    {
+      "window_ns": 10000000,
+      "window": "10 ms",
+      "peak_bits": 7734384,
+      "peak_utilization": 0.030937536,
+      "peak_start_ns": 1760000000562669924,
+      "episodes_above_threshold": 0,
+      "applicable": true,
+      "allowance": 2e-07,
+      "beyond_line_rate": false,
+      "average_utilization": 0.024880768446210285
+    },
+    {
+      "window_ns": 1000000000,
+      "window": "1 s",
+      "peak_bits": 624604176,
+      "peak_utilization": 0.02498416704,
+      "peak_start_ns": 1760000000062197474,
+      "episodes_above_threshold": 0,
+      "applicable": true,
+      "allowance": 2e-09,
+      "beyond_line_rate": false,
+      "average_utilization": 0.024880768446210285
+    }
+  ]
+}

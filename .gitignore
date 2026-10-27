@@ -1,0 +1,11 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+*.pcap
+*.pcapng
+*.parquet
+demo/
+pcaplat-report/
+pcaplat-bursts/

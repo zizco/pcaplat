@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pcaplat"
+version = "0.1.0"
+description = "Two-point one-way latency, tail statistics and burst analysis from pcap/pcapng captures"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.24", "pandas>=2.0", "pyarrow>=12", "matplotlib>=3.7", "scipy>=1.10"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+validation = ["scapy>=2.5", "dpkt>=1.9"]
+
+[project.scripts]
+pcaplat = "pcaplat.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

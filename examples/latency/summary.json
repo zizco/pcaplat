@@ -1,0 +1,232 @@
+{
+  "json_encoding": "non-finite numbers are written as null, with a sibling field '<name>_nonfinite' set to '+inf', '-inf' or 'nan'. In percentile rows, '+inf' is a lost or late packet ranked as infinitely late, and an unbounded interval end also has its ci_low_unbounded / ci_high_unbounded flag; 'nan' is a statistic of an empty sample.",
+  "meta": {
+    "label": "synthetic: 25G ingress to 10G egress, 64 KB buffer",
+    "ts_source_a": "synthetic, exact ns",
+    "ts_source_b": "synthetic, exact ns",
+    "clock": "synthetic (perfect)",
+    "clock_error_ns": 1,
+    "same_clock": false,
+    "single_file": false,
+    "resolution_a_ns": 1.0,
+    "resolution_b_ns": 1.0,
+    "issues": [],
+    "key": "l4payload",
+    "filter": "",
+    "min_tail": 100,
+    "versions": {
+      "pcaplat": "0.1.0",
+      "python": "3.13.16",
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "pyarrow": "26.0.0",
+      "generated_utc": "2026-10-27 00:49:02"
+    }
+  },
+  "files": [
+    {
+      "file": "a.pcap",
+      "sha256_12": "de09a2adedfc",
+      "format": "pcap",
+      "timestamp_resolution": "1 ns",
+      "packets": 1000000,
+      "duration_ns": 1620528686
+    },
+    {
+      "file": "b.pcap",
+      "sha256_12": "0ca28709c774",
+      "format": "pcap",
+      "timestamp_resolution": "1 ns",
+      "packets": 992718,
+      "duration_ns": 1620528681
+    }
+  ],
+  "load": {
+    "packets": 1000000,
+    "duration_ns": 1620528686,
+    "estimator": "n-1 frames over the n-1 intervals between the first and last start timestamps",
+    "pps": 617081.9490201854,
+    "gbps": 0.6220186046123468,
+    "available": true
+  },
+  "counts": {
+    "packets_a": 1000000,
+    "packets_b": 992718,
+    "ambiguous_a": 50,
+    "ambiguous_b": 50,
+    "late_beyond_window": 0,
+    "latest_ns": 0,
+    "negative_beyond_allowance": 0,
+    "out_of_window": 0,
+    "negative_latency": 0,
+    "cohort": 999382,
+    "lost": 7482,
+    "late_in_cohort": 0,
+    "extra_b": 200,
+    "clock_invalid_in_cohort": 0,
+    "a_in_overlap": 999382,
+    "loss_rate": 0.007486626735322429,
+    "matched": 992468,
+    "matched_in_cohort": 991900,
+    "skipped_a": {
+      "selected": 1000000,
+      "not_ip_or_malformed": 0,
+      "filtered_out": 0,
+      "truncated": 0,
+      "fragments": 0
+    },
+    "skipped_b": {
+      "selected": 992718,
+      "not_ip_or_malformed": 0,
+      "filtered_out": 0,
+      "truncated": 0,
+      "fragments": 0
+    }
+  },
+  "summary": {
+    "samples": 992468,
+    "lost": 7482,
+    "late": 0,
+    "clock_invalid": 0,
+    "cohort": 999382,
+    "ranked_in_loss_aware": 999382,
+    "loss_rate": 0.007486626735322429,
+    "min_ns": 553.0,
+    "mean_ns": 1263.0591293623572,
+    "std_ns": 5226.64317857788,
+    "max_ns": 53549.0,
+    "percentiles": [
+      {
+        "percentile": 50.0,
+        "value_ns": 572.0,
+        "ci_low_ns": 572.0,
+        "ci_high_ns": 572.0,
+        "beyond": 496234,
+        "reliable": true,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 90.0,
+        "value_ns": 600.0,
+        "ci_low_ns": 600.0,
+        "ci_high_ns": 600.0,
+        "beyond": 99246,
+        "reliable": true,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 99.0,
+        "value_ns": 36548.0,
+        "ci_low_ns": 35949.0,
+        "ci_high_ns": 37153.0,
+        "beyond": 9924,
+        "reliable": true,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 99.9,
+        "value_ns": 51761.0,
+        "ci_low_ns": 51760.0,
+        "ci_high_ns": 51762.0,
+        "beyond": 992,
+        "reliable": true,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 99.99,
+        "value_ns": 51786.0,
+        "ci_low_ns": 51785.0,
+        "ci_high_ns": 51790.0,
+        "beyond": 99,
+        "reliable": false,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 99.999,
+        "value_ns": 51817.0,
+        "ci_low_ns": 51809.0,
+        "ci_high_ns": 51835.0,
+        "beyond": 9,
+        "reliable": false,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      }
+    ],
+    "percentiles_loss_aware": [
+      {
+        "percentile": 50.0,
+        "value_ns": 572.0,
+        "ci_low_ns": 572.0,
+        "ci_high_ns": 572.0,
+        "beyond": 499691,
+        "reliable": true,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 90.0,
+        "value_ns": 602.0,
+        "ci_low_ns": 602.0,
+        "ci_high_ns": 602.0,
+        "beyond": 99938,
+        "reliable": true,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 99.0,
+        "value_ns": 51749.0,
+        "ci_low_ns": 51747.0,
+        "ci_high_ns": 51750.0,
+        "beyond": 9993,
+        "reliable": true,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 99.9,
+        "value_ns": null,
+        "value_ns_nonfinite": "+inf",
+        "ci_low_ns": null,
+        "ci_low_ns_nonfinite": "+inf",
+        "ci_high_ns": null,
+        "ci_high_ns_nonfinite": "+inf",
+        "beyond": 999,
+        "reliable": true,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 99.99,
+        "value_ns": null,
+        "value_ns_nonfinite": "+inf",
+        "ci_low_ns": null,
+        "ci_low_ns_nonfinite": "+inf",
+        "ci_high_ns": null,
+        "ci_high_ns_nonfinite": "+inf",
+        "beyond": 99,
+        "reliable": false,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      },
+      {
+        "percentile": 99.999,
+        "value_ns": null,
+        "value_ns_nonfinite": "+inf",
+        "ci_low_ns": null,
+        "ci_low_ns_nonfinite": "+inf",
+        "ci_high_ns": null,
+        "ci_high_ns_nonfinite": "+inf",
+        "beyond": 9,
+        "reliable": false,
+        "ci_low_unbounded": false,
+        "ci_high_unbounded": false
+      }
+    ]
+  }
+}
